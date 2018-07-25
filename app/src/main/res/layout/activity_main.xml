@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#f20"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:text="Máy tính bỏ túi"
+        android:id="@+id/textviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:hint="Nhap vao so thu 1"
+        android:id="@+id/edittextSothu1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:hint="Nhap vao so thu 2"
+        android:id="@+id/edittextSothu2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/edittextSothu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textviewKetqua"
+        android:textColor="#cab32d"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="30"
+        android:textSize="35sp"
+        android:layout_below="@id/edittextSothu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/buttonCong"
+        android:textSize="35sp"
+        android:text="+"
+        android:layout_below="@id/textviewKetqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/buttonTru"
+        android:textSize="35sp"
+        android:text="-"
+        android:layout_below="@id/textviewKetqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/buttonNhan"
+        android:textSize="35sp"
+        android:text="x"
+        android:layout_below="@id/buttonCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/buttonChia"
+        android:textSize="35sp"
+        android:text="/"
+        android:layout_below="@id/buttonCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
